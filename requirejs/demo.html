@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RequireJS demo</title>
+        <!-- NOTE data-main attribute tells require.js to load scripts/main.js after require.js loads. -->
+        <script data-main="js/main" src="js/require.js"></script>
+    </head>
+    <body>
+        <h1>RequireJS Demo - Number Guessing</h1>
+        <p>
+            Loading process:
+            <ol>
+                <li>
+                    'require.js' is loaded, it finds the entry JS file is 'main.js';
+                </li>
+                <li>
+                    'main.js' is loaded, which requires 'NumberGuessing.js';
+                </li>
+                <li>
+                    'NumberGuessing.js' is loaded, which requires 'RandomNumber.js';
+                </li>
+                <li>
+                    'RandomNumber.js' is loaded, everything is loaded now;
+                </li>
+                <li>
+                    function in 'main.js' starts;
+                </li>
+            </ol>
+        </p>
+    </body>
+</html>

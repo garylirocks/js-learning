@@ -25,6 +25,8 @@ class Cat extends Animal { // NOTE use 'extends' to extend a class
 
 var snowball = new Cat('Snowball', 'white');
 
+console.log(typeof Cat); // NOTE its type is 'function'
+
 console.log(snowball);
 /*
 Cat { voice: 'Meow', name: 'Snowball', color: 'white' }
@@ -36,7 +38,7 @@ Cat {}
 */
 
 // NOTE all the properties are un-enumerable by default,
-//      so they are not ouputted here, this is the difference contrasting to the function constructor method 
+//      so they are not ouputted here, this is the difference contrasting to the function constructor method
 console.log(snowball.__proto__.__proto__);
 /*
 Animal {}

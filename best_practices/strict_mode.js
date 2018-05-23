@@ -1,5 +1,5 @@
 // NOTE demo the 'strict mode' of JavaScript
-//      'use script' can only be applied to the whole script or individual functions
+//      'use strict' can only be applied to the whole script or individual functions
 
 'use strict';
 

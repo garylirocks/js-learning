@@ -94,6 +94,17 @@ Object.getOwnPropertyDescriptors(o);
 Object.isFrozen(o);
 // true
 
+/** ================== Nested Object ================== */
+const nested = { name: { first: 'gary', last: 'li' } };
+
+Object.freeze(nested);
+
+Object.isFrozen(nested);
+// true
+
+Object.isFrozen(nested.name); // NOTE only the top level is frozen
+// false
+
 /** ================== Empty Object ================== */
 
 let empty = Object.preventExtensions({});
